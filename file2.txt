@@ -150,4 +150,32 @@ To https://github.com/Seredada/LearnGit.git
 
 79211@DESKTOP-HQ3I4B8 MINGW64 ~/learngit (main)
 $ touch file2.txt
+79211@DESKTOP-HQ3I4B8 MINGW64 ~/learngit (main)
+$ git add file2.txt
+warning: CRLF will be replaced by LF in file2.txt.
+The file will have its original line endings in your working directory
+
+79211@DESKTOP-HQ3I4B8 MINGW64 ~/learngit (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   file2.txt
+
+
+79211@DESKTOP-HQ3I4B8 MINGW64 ~/learngit (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   file2.txt
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   file1.txt
 

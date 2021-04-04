@@ -21,17 +21,4 @@ index dbedcbe..d6958d4 100644
 $ git add .
 $ git commit # пишем описание изменений в самой первой строке файла
 
-# Please enter the commit message for your changes. Lines starting
-# with '#' will be ignored, and an empty message aborts the commit.
-#
-# On branch master
-# Your branch is ahead of 'origin/master' by 1 commit.
-#   (use "git push" to publish your local commits)
-#
-# Changes to be committed:
-#   	modified:   README.md
-
-$ # снова изменения
-$ git commit
-$ git pull origin master
-$ git push origin https://github.com/yourname/xi-mac.git
+# Please enter the
