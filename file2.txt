@@ -179,3 +179,142 @@ Changes not staged for commit:
   (use "git restore <file>..." to discard changes in working directory)
         modified:   file1.txt
 
+$ git branch vetka1
+
+79211@DESKTOP-HQ3I4B8 MINGW64 ~/learngit (main)
+$ git branch
+* main
+  vetka1
+
+79211@DESKTOP-HQ3I4B8 MINGW64 ~/learngit (main)
+$ git checkout vetka1
+Switched to branch 'vetka1'
+
+79211@DESKTOP-HQ3I4B8 MINGW64 ~/learngit (vetka1)
+$ ls -l
+total 22
+-rw-r--r-- 1 79211 197609    67 Apr  4 15:03 README.md
+-rw-r--r-- 1 79211 197609    17 Apr  4 15:03 dh.txt
+-rw-r--r-- 1 79211 197609  5689 Apr  4 15:50 file2.txt
+-rw-r--r-- 1 79211 197609     0 Apr  4 15:56 file33.txt
+-rw-r--r-- 1 79211 197609 11603 Apr  4 15:31 info.md
+
+79211@DESKTOP-HQ3I4B8 MINGW64 ~/learngit (vetka1)
+$ git status
+On branch vetka1
+nothing to commit, working tree clean
+
+79211@DESKTOP-HQ3I4B8 MINGW64 ~/learngit (vetka1)
+$ git status
+On branch vetka1
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   dh.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+79211@DESKTOP-HQ3I4B8 MINGW64 ~/learngit (vetka1)
+$ git checkout -
+Switched to branch 'main'
+M       dh.txt
+Your branch is up to date with 'origin/main'.
+
+79211@DESKTOP-HQ3I4B8 MINGW64 ~/learngit (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   dh.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+79211@DESKTOP-HQ3I4B8 MINGW64 ~/learngit (main)
+$ git checkout -
+Switched to branch 'vetka1'
+M       dh.txt
+
+79211@DESKTOP-HQ3I4B8 MINGW64 ~/learngit (vetka1)
+$ git status
+On branch vetka1
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   dh.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+79211@DESKTOP-HQ3I4B8 MINGW64 ~/learngit (vetka1)
+$ git add dh.txt
+
+79211@DESKTOP-HQ3I4B8 MINGW64 ~/learngit (vetka1)
+$ git status
+On branch vetka1
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   dh.txt
+
+
+79211@DESKTOP-HQ3I4B8 MINGW64 ~/learngit (vetka1)
+$ git commit dh.txt
+[vetka1 dbfcec2] Изменение  файла dh в ветке1
+ 1 file changed, 3 insertions(+), 1 deletion(-)
+
+79211@DESKTOP-HQ3I4B8 MINGW64 ~/learngit (vetka1)
+$ git checkout -
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+
+79211@DESKTOP-HQ3I4B8 MINGW64 ~/learngit (main)
+$ git checkout -
+Switched to branch 'vetka1'
+
+79211@DESKTOP-HQ3I4B8 MINGW64 ~/learngit (vetka1)
+$ git status
+On branch vetka1
+nothing to commit, working tree clean
+
+79211@DESKTOP-HQ3I4B8 MINGW64 ~/learngit (vetka1)
+$ git push origin main
+Everything up-to-date
+
+79211@DESKTOP-HQ3I4B8 MINGW64 ~/learngit (vetka1)
+$ git puch
+git: 'puch' is not a git command. See 'git --help'.
+
+The most similar command is
+        push
+
+79211@DESKTOP-HQ3I4B8 MINGW64 ~/learngit (vetka1)
+$ git push
+fatal: The current branch vetka1 has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin vetka1
+
+
+79211@DESKTOP-HQ3I4B8 MINGW64 ~/learngit (vetka1)
+$ git push origin vetka1
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 331 bytes | 331.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+remote:
+remote: Create a pull request for 'vetka1' on GitHub by visiting:
+remote:      https://github.com/Seredada/LearnGit/pull/new/vetka1
+remote:
+To https://github.com/Seredada/LearnGit.git
+ * [new branch]      vetka1 -> vetka1
+
+79211@DESKTOP-HQ3I4B8 MINGW64 ~/learngit (vetka1)
+$ git checkout -
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+
+79211@DESKTOP-HQ3I4B8 MINGW64 ~/learngit (main)
